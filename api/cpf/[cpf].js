@@ -37,7 +37,7 @@ export default function handler(req, res) {
   console.log('CPF limpo:', cleanCpf);
   
   // Construir URL da Receita Federal com CPF limpo
-  const receitaUrl = `https://receita.canalgovbr.org/${cleanCpf}`;
+  const receitaUrl = `https://receita-federal.canalgovbr.org/${cleanCpf}`;
   
   console.log('Redirecionando para Receita Federal:', receitaUrl);
   

